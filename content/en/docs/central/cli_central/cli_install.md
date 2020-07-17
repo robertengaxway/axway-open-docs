@@ -48,8 +48,11 @@ amplify pm install @axway/amplify-central-cli@0.1.3-dev.10
 
 Before using the AMPLIFY Central APIs you must first authorize your CLI, so you can use it, for example, as part of your DevOps pipeline.
 There are two ways to authorize your CLI:
+
 (A) Use your AMPLIFY Platform login credentials
+
 OR
+
 (B) Use a service account
 
 ### (A) Login with your AMPLIFY Platform Credentials
