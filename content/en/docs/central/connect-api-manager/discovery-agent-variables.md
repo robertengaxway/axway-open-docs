@@ -7,8 +7,10 @@ description: Use the following environment variables to control your Discovery
   and Traceability agents
 ---
 
-As the Discovery and Traceability agents share many parameters, it is more efficient to use environment variables and reference these variables, instead of declaring parameters twice. In the agent configuration file you can reference a variable like so: ${APIMANAGER_HOST} or including a default value: ${APIMANAGER_HOST:"apimanager.company.com"}.  
-To maintain a shareable collection of environment files, one approach is to create an `env_vars` file, which contains simple key value pairs. You may use the variables declared in the table below, as they are already referenced by the provided YAML-Configuration templates.  
+As the Discovery and Traceability agents share many parameters, it is more efficient to use environment variables and reference these variables, instead of declaring parameters twice. In the agent configuration file you can reference a variable like so: ${APIMANAGER_HOST} or including a default value: ${APIMANAGER_HOST:"apimanager.company.com"}.
+
+To maintain a shareable collection of environment files, one approach is to create an `env_vars` file, which contains simple key value pairs. You may use the variables declared in the table below, as they are already referenced by the provided YAML-Configuration templates.
+  
 Note that the agent is expecting system environment variables, which you can create based on the `env_vars` file with either this command: `export $(grep -v '^#' env_vars | xargs)` and if you prefer: `set -a && source env_vars && set +a`.
 
 | Variable name                           | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |   |

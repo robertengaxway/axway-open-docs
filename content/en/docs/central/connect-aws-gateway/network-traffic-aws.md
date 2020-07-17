@@ -6,7 +6,6 @@ weight: 70
 description: Traffic is always initiated by the Agent to AWS and AMPLIFY
   Central. No sessions are ever initiated back to the Agent.
 ---
-{{< alert title="Note" color="primary" >}}The Axway API Gateway connectivity to AMPLIFY Central is currently available in an alpha review mode; current functionality and configuration may change before release. Therefore, this connectivity is available for trial use only and is not supported for production API management or connectivity.{{< /alert >}}
 
 ## Data destinations
 

@@ -69,7 +69,7 @@ description: A subscription provides the consumer, or subscriber, with the
 1. A consumer initiates unsubscribe:
 
    1. Open the AMPLIFY Catalog and navigate to the **Subscription** tab.
-   2. Delete the subscription.  For additional information, see [Manage AMPLIFY Catalog subscriptions](https://docs.axway.com/bundle/axway-open-docs/page/docs/catalog/manage_subscriptions/index.html).
+   2. Delete the subscription. For additional information, see [Manage AMPLIFY Catalog subscriptions](https://docs.axway.com/bundle/axway-open-docs/page/docs/catalog/manage_subscriptions/index.html).
 
 2. The Discovery Agent receives the Unsubscribe event:
 

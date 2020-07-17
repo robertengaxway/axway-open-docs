@@ -9,7 +9,6 @@ description: Understand why you would want a connected / managed environment for
   the creation / deployment / publishing and subscriptions of the AWS API
   Gateway hosted APIs in one central location.
 ---
-{{< alert title="Note" color="primary" >}}The AWS API Gateway connectivity to AMPLIFY Central is currently available in an alpha review mode; current functionality and configuration may change before release.   Therefore, this connectivity is available for trial use only and is not supported for production API management or connectivity.{{< /alert >}}
 
 ## Why do you want to connect AWS API Gateway and AMPLIFY Central?
 

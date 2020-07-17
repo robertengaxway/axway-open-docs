@@ -7,10 +7,10 @@ description: Learn how to set up tag-based condition expression(s) using the
   APIMANAGER_FILTER environment variable to discover APIs that could be added to
   AMPLIFY Central.
 ---
+
 Conditional expressions statements use logical operators to compare values. This section provides sample syntax for defining expressions.
 
-{{< alert title="Note" color="primary" >}}For tag-based filtering, the conditional expression should have "tag" as the prefix / selector in the symbol name.
-The expression can be a simple condition or a compound condition in which multiple conditions are evaluated using logical operators. See Logical operators and Comparative operators, below.{{< /alert >}}
+{{< alert title="Note" color="primary" >}}For tag-based filtering, the conditional expression should have “tag” as the prefix / selector in the symbol name. The expression can be a simple condition or a compound condition in which multiple conditions are evaluated using logical operators. See Logical operators and Comparative operators, below.{{< /alert >}}
 
 ```
 tag.<tagName> == <tagValue>

@@ -8,7 +8,6 @@ description: This section provides troubleshooting, known limitations and
   managed environment for AWS API Gateway within AMPLIFY Central. It also
   provides tips you may find useful when working with this environment.
 ---
-{{< alert title="Note" color="primary" >}}The AWS API Gateway connectivity to AMPLIFY Central is currently available in an alpha review mode; current functionality and configuration may change before release.   Therefore, this connectivity is available for trial use only and is not supported for production API management or connectivity.{{< /alert >}}
 
 ## Troubleshooting
 

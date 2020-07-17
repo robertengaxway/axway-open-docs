@@ -5,7 +5,6 @@ draft: false
 weight: 80
 description: This section describes the main security features of the AWS API Gateway agents.
 ---
-{{< alert title="Note" color="primary" >}}The Axway API Gateway connectivity to AMPLIFY Central is currently available in an alpha review mode; current functionality and configuration may change before release. Therefore, this connectivity is available for trial use only and is not supported for production API management or connectivity.{{< /alert >}}
 
 ## Information security
 

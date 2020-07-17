@@ -7,7 +7,6 @@ description: Learn how to deploy your Discovery Agent and Traceability Agent so
   that you can manage  your Axway API Gateway environment within AMPLIFY
   Central.
 ---
-{{< alert title="Note" color="primary" >}}The Axway API Gateway connectivity to AMPLIFY Central is currently available in an alpha review mode; current functionality and configuration may change before release.   Therefore, this connectivity is available for trial use only and is not supported for production API management or connectivity.{{< /alert >}}
 
 ## Before you start
 

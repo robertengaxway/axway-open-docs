@@ -6,7 +6,6 @@ weight: 20
 description: Learn how to create an environment and Service Account for Axway
   API Gateway within AMPLIFY Central.
 ---
-{{< alert title="Note" color="primary" >}}The Axway API Gateway connectivity to AMPLIFY Central is currently available in an alpha review mode; current functionality and configuration may change before release. Therefore, this connectivity is available for trial use only and is not supported for production API management or connectivity.{{< /alert >}}
 
 ## Before you start
 

@@ -5,7 +5,6 @@ draft: false
 weight: 90
 description: As a Cloud Administrator / Operator, you are responsible for configuring and managing your organization’s AWS infrastructure. This topic contains setup and test details for the additional AWS services that are required for Axway’s agents to govern your AWS API Gateway service. The additional services which will be configured are AWS CloudWatch, AWS SQS, AWS Config, and AWS Lambda.
 ---
-{{< alert title="Note" color="primary" >}}The Axway API Gateway connectivity to AMPLIFY Central is currently available in an alpha review mode; current functionality and configuration may change before release. Therefore, this connectivity is available for trial use only and is not supported for production API management or connectivity.{{< /alert >}}
 
 ## Overview
 

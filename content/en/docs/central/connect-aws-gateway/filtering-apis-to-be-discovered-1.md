@@ -11,7 +11,6 @@ description: >-
   Conditional expressions statements use logical operators to compare values. This section provides sample syntax for defining expressions.
 ---
 
-
 {{< alert title="Note" color="primary" >}}For tag based filtering, the conditional expression should have "tag" as the prefix / selector in the symbol name:  `tag.<tagName> == <tagValue>`. The expression can be a simple condition or a compound condition in which multiple conditions are evaluated using logical operators. See Logical operators and Comparative operators, below.{{< /alert >}}
 
 ## Filter based on tag name
