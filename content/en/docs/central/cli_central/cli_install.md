@@ -57,14 +57,14 @@ OR
 
 ### (A) Login with your AMPLIFY Platform Credentials
 
-To use Central CLI to login with your AMPLIFY Platform credentials, use 'apicentral' as the client identifier: 
+To use Central CLI to login with your AMPLIFY Platform credentials, use 'apicentral' as the client identifier:
 
 ```
 amplify auth login --client-id apicentral
 ```
 
 A browswer pop-up window should appear. After entering valid credentials (email address and password), an "Authorization Successful" message will appear and you can go back to the Central CLI.
-If you are a member of multiplie AMPILFY organziations, you may have to choose an organization. 
+If you are a member of multiplie AMPILFY organziations, you may have to choose an organization.
 
 To check that your client identifier is set correctly to 'apicentral':
 
@@ -80,7 +80,6 @@ amplify central config set --clientid=apicentral
 ```
 
 You have completed the authorization of your CLI with your AMPLIFY Platform Credentails.
-
 
 ### (B) Authenticate and authorize your service account
 
