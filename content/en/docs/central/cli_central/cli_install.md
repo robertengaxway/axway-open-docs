@@ -35,10 +35,10 @@ description: Learn how to install the AMPLIFY CLI and authorize it to use the AM
     AMPLIFY CLI, version 1.4.0
     Copyright (c) 2018, Axway, Inc. All Rights Reserved.
     NAME                           | INSTALLED VERSIONS             | ACTIVE VERSION
-    @axway/amplify-central-cli     | 0.1.3,0.1.3-dev.10             | 0.1.3
+    @axway/amplify-central-cli     | 0.1.4,0.1.3-dev.10             | 0.1.4
     ```
 
-All the development versions of AMPLIFY Central CLI can be found at [NPM install of AMPLIFY Central CLI](https://www.npmjs.com/package/@axway/amplify-central-cli). To install specific develop version, run the following command:
+All the development versions of AMPLIFY Central CLI can be found at [NPM install of AMPLIFY Central CLI](https://www.npmjs.com/package/@axway/amplify-central-cli). To install specific development version, run the following command:
 
 ```
 amplify pm install @axway/amplify-central-cli@0.1.3-dev.10
@@ -47,10 +47,38 @@ amplify pm install @axway/amplify-central-cli@0.1.3-dev.10
 ## Authorize your CLI to use the AMPLIFY Central APIs
 
 Before using the AMPLIFY Central APIs you must first authorize your CLI, so you can use it, for example, as part of your DevOps pipeline.
+There are two ways to authorize your CLI:
+(A) Use your AMPLIFY Platform login credentials 
+OR
+(B) Use a service account
 
-### Authenticate and authorize your service account
+### (A) Login with your AMPLIFY Platform Credentials 
 
-To use Central CLI your service account must authenticate with AMPLIFY Platform, and it must be authorized to use the AMPLIFY Central APIs.
+To use Central CLI to login with your AMPLIFY Platform credentials, use 'apicentral' as the client identifier: 
+```
+amplify auth login --client-id apicentral
+```
+
+A browswer pop-up window should appear. After entering valid credentials (email address and password), an "Authorization Successful" message will appear and you can go back to the Central CLI.
+If you are a member of multiplie AMPILFY organziations, you may have to choose an organization. 
+
+To check that your client identifier is set correctly to 'apicentral':
+```
+amplify central config list
+{ 'client-id': 'apicentral' }
+```
+
+If the client identifier is not set to 'apicentral', set the client identifier for future operations::
+```
+amplify central config set --clientid=apicentral
+```
+
+You have completed the authorization of your CLI with your AMPLIFY Platform Credentails.
+
+
+### (B) Authenticate and authorize your service account
+
+To use the Central CLI your service account must authenticate with AMPLIFY Platform, and it must be authorized to use the AMPLIFY Central APIs.
 
 To support DevOps service interactions, AMPLIFY Central uses the OAuth 2.0 client credentials flow with JWT:
 
@@ -126,4 +154,4 @@ amplify central config list
 
 ## Review
 
-You have learned how to install the AMPLIFY CLI and how to register or link it to a service account. Now, you can integrate the AMPLIFY CLI into your DevOps pipeline to automate actions in AMPLIFY Central.
+You have learned how to install the AMPLIFY CLI and how to register or link it to a service account (or AMPLIFY Platform account). Now, you can integrate the AMPLIFY CLI into your DevOps pipeline to automate actions in AMPLIFY Central.
