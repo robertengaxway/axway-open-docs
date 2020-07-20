@@ -49,41 +49,40 @@ amplify pm install @axway/amplify-central-cli@0.1.3-dev.10
 Before using the AMPLIFY Central APIs you must first authorize your CLI, so you can use it, for example, as part of your DevOps pipeline.
 There are two ways to authorize your CLI:
 
-(A) Use your AMPLIFY Platform login credentials
+* [Use your AMPLIFY Platform login credentials](/docs/central/cli_central/cli_install#login-with-your-amplify-platform-credentials).
+* [Use a service account](/docs/central/cli_central/cli_install#authenticate-and-authorize-your-service-account).
 
-OR
+### Log in with your AMPLIFY Platform credentials
 
-(B) Use a service account
-
-### (A) Login with your AMPLIFY Platform Credentials
-
-To use Central CLI to login with your AMPLIFY Platform credentials, use 'apicentral' as the client identifier:
+To use Central CLI to log in with your AMPLIFY Platform credentials, run the following command and used `apicentral` as the client identifier:
 
 ```
 amplify auth login --client-id apicentral
 ```
 
-A browswer pop-up window should appear. After entering valid credentials (email address and password), an "Authorization Successful" message will appear and you can go back to the Central CLI.
-If you are a member of multiplie AMPILFY organziations, you may have to choose an organization.
+Enter valid credentials (email address and password) on the dialog box displayed.
+An "Authorization Successful" message is displayed, and you can go back to the Central CLI.
 
-To check that your client identifier is set correctly to 'apicentral':
+If you are a member of multiple AMPLIFY organizations, you may have to choose an organization.
+
+To check that your client identifier is set correctly to `apicentral`, run:
 
 ```
 amplify central config list
 { 'client-id': 'apicentral' }
 ```
 
-If the client identifier is not set to 'apicentral', set the client identifier for future operations::
+If the client identifier is not set to `apicentral`, set the client identifier for future operations::
 
 ```
 amplify central config set --clientid=apicentral
 ```
 
-You have completed the authorization of your CLI with your AMPLIFY Platform Credentails.
+You have completed the authorization of your CLI with your AMPLIFY Platform credentials.
 
-### (B) Authenticate and authorize your service account
+### Authenticate and authorize your service account
 
-To use the Central CLI your service account must authenticate with AMPLIFY Platform, and it must be authorized to use the AMPLIFY Central APIs.
+To use the Central CLI, your service account must authenticate with AMPLIFY Platform and it must be authorized to use the AMPLIFY Central APIs.
 
 To support DevOps service interactions, AMPLIFY Central uses the OAuth 2.0 client credentials flow with JWT:
 
@@ -92,7 +91,7 @@ To support DevOps service interactions, AMPLIFY Central uses the OAuth 2.0 clien
 * Use the client ID and private key to authenticate with AMPLIFY Platform to obtain a JWT.
 * Use the JWT to make authorized API calls to AMPLIFY Central.
 
-### Generate an RSA key pair
+#### Generate an RSA key pair
 
 To authorize a service account with AMPLIFY Platform, you must have a public and private key pair in RSA format. To create this key pair, use `openssl` as follows:
 
@@ -119,7 +118,7 @@ ssh-keygen -t rsa -b 2048 -m PEM
 ssh-keygen -f <public_key_name> -e -m PKCS8
 ```
 
-### Create a service account
+#### Create a service account
 
 Log in to AMPLIFY Central UI as an administrator, and create a service account for your CLI. Add the public key that you created earlier. When the account is created, copy the client identifier from the **Client ID** field.
 
@@ -127,7 +126,7 @@ Watch the animation to learn how to do this in AMPLIFY Central UI.
 
 ![Create service account in AMPLIFY Central UI](/Images/central/service_account_animation.gif)
 
-### Authorize the service account with AMPLIFY platform
+#### Authorize the service account with AMPLIFY platform
 
 To authorize the service account with AMPLIFY platform, log in to AMPLIFY CLI using the following command:
 
@@ -142,7 +141,7 @@ You are logged into 8605xxxxxxx28 as DOSA_5ed74d68defxxxxxxxxxxxxxxxxxxxxxxxxxxx
 This account has been set as active.
 ```
 
-### Set the active service account
+#### Set the active service account
 
 To set the service account client identifier for future operations:
 
@@ -159,4 +158,4 @@ amplify central config list
 
 ## Review
 
-You have learned how to install the AMPLIFY CLI and how to register or link it to a service account (or AMPLIFY Platform account). Now, you can integrate the AMPLIFY CLI into your DevOps pipeline to automate actions in AMPLIFY Central.
+You have learned how to install the AMPLIFY CLI and how to register or link it to a service account, or to the AMPLIFY Platform account. Now, you can integrate the AMPLIFY CLI into your DevOps pipeline to automate actions in AMPLIFY Central.
